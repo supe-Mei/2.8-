@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../../dist/atguigu-utils.js"></script>
+  <script>
+    var list = new DoublyLinkedList()
+    list.append("abc")
+    list.append("cba")
+    list.append("nba")
+    list.append("mba")
+    console.log(list.forwardString())
+    console.log(list.revererString())
+    list.insert(0,"100")
+    list.insert(2,"200")
+    list.insert(6,"300")
+    console.log(list)
+
+    console.log(list.indexOf("abc"))
+    console.log(list.indexOf("cba"))
+    console.log(list.indexOf("nba"))
+    console.log(list.indexOf("mba"))
+
+    console.log(list.remove("abc"))
+    console.log(list)
+
+    console.log(list.getHead())
+    console.log(list.getTail())
+    console.log(list.isEmpty())
+    console.log(list.size())
+  </script>
+</body>
+</html>

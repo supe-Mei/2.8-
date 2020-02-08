@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script src="../../../dist/atguigu-utils.js"></script>
+  <script>
+    function dec2bin(decNumber) {
+      //创建一个空栈
+      const stack = new aUtils.Stack()
+      while (decNumer > 0) {
+        let remainder = decNumer % 2
+        stack.push(remainder)
+        decNumer = Math.floor(deNumer/2)
+      }
+
+      //取出栈中所有元素拼成二进制数
+      let binayriStrng = ""
+      while (!stack.isEmpty()) {
+        binayriStrng += stack.pop()
+      }
+
+      return binayriStrng
+    }
+  </script>
+</body>
+</html>
